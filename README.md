@@ -4,7 +4,7 @@ Generate models:
 
 
 ```bash
-    $ rails generate model Property name:string description:text type:string
+    $ rails generate model Property name:string description:text type:string !!!!!!!! not type
 ```
 
 

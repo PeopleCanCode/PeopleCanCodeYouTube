@@ -70,6 +70,8 @@ I suggest you start with something like [codecademy](https://www.codecademy.com/
 
 ### Understanding view helpers
 
+### Pagination
+
 ### Difference between render and redirect_to
 
 ### Rendering Javascript templates with jQuery UJS

@@ -37,26 +37,41 @@ Generate models:
 ```ruby
     class Property < ApplicationRecord
 
-        def index
-        end
+      def index
+        @recipes = Recipe.all
+      end
 
-        def show
-        end
+      def show
+      end
 
-        def new
-        end
+      def new
+        @recipe = Recipe.new
+      end
 
-        def create
-        end
+      def create
+        @recipe = Recipe.new(allowed_params)
 
-        def edit
+        if @recipe.save
+          redirect_to recipes_path
+        else
+          render 'new'
         end
+      end
 
-        def update
-        end
+      def edit
+      end
 
-        def destroy
-        end
+      def update
+      end
+
+      def destroy
+      end
+
+      private
+
+      def allowed_params
+        params.require(:recipe).permit(:name, :description)
+      end
 
     end
 ```

@@ -1,8 +1,27 @@
 #PeopleCanCode
 
-## Ruby specific topics
 
-### for very basic - check codecademy
+## Preparation
+If you're here I suspect you are on the mission to learn how to use Ruby on Rails. Lets get going. You will need some tools to get started.
+
+
+### Installing Homebrew ( Mac )
+
+### Installing Git ( Mac / Linux )
+
+### Installing Ruby ( Mac / Linux )
+
+### Installing Postgres  ( Mac / Linux )
+
+### Installing Mysql ( Mac / Linux )
+
+### Installing Ruby on Rails and other gems
+
+
+## Ruby specific topics
+This section contains summary and additional explanations for tutorials focusing on concepts related to ruby language.
+I suggest you start with something like [codecademy](https://www.codecademy.com/learn/ruby)
+
 
 ### Understanding Class
 
@@ -29,6 +48,13 @@
 
 ### Understanding Controller and View
 
+### Understanding HTTP methods in context of Ruby on Rails
+
+### Understanding Router
+1. resourceful routes
+2. named routes
+3. scoped routes
+
 ### Understanding *Relationships* in Ruby on Rails
 1. has_many / belongs_to
 2. has_one / belongs_to
@@ -36,19 +62,11 @@
 4. has_many :through
 5. polymorphic
 
-
-### Understanding Modules in Ruby on Rails
+### Understanding Eager Loading
 
 ### Understanding Partials in Ruby on Rails
 
 ### Understanding Migrations in Ruby on Rails
-
-### Understanding Router
-1. resourceful routes
-2. named routes
-3. scoped routes
-
-### Understanding HTTP methods in context of Ruby on Rails
 
 ### Understanding view helpers
 
@@ -56,7 +74,7 @@
 
 ### Rendering Javascript templates with jQuery UJS
 
-### Understanding Eager Loading
+### Understanding Modules in Ruby on Rails
 
 ### Understanding assets pipeline
 1. compilation
@@ -72,7 +90,6 @@
 ### Rake tasks
 1. standard
 2. with params
-
 
 
 
@@ -115,10 +132,3 @@
 
 
 
-## Preparation
-
-### Installing Homebrew ( Mac )
-
-### Installing Postgres  ( Mac / Linux )
-
-### Installing Mysql ( Mac / Linux )

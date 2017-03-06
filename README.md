@@ -1,24 +1,65 @@
-# README
+# MVC
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Generate models:
 
-Things you may want to cover:
 
-* Ruby version
+```bash
+    $ rails generate model Property name:string description:text type:string
+```
 
-* System dependencies
 
-* Configuration
+```bash
+    $ rake db:migrate
 
-* Database creation
+    # or
 
-* Database initialization
+    $ rails db:migrate
+```
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+```bash
+    $ rails generate controller properties
+```
 
-* Deployment instructions
 
-* ...
+```ruby
+    Rails.application.routes.draw do
+      # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+      root 'properties#index'
+
+      resources :properties
+
+    end
+```
+
+
+```ruby
+    class Property < ApplicationRecord
+
+        def index
+        end
+
+        def show
+        end
+
+        def new
+        end
+
+        def create
+        end
+
+        def edit
+        end
+
+        def update
+        end
+
+        def destroy
+        end
+
+    end
+```
+
+
+Create views (by hand, we will use generator next time)

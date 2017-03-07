@@ -1,24 +1,27 @@
-# README
+# Router
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+```ruby
+Rails.application.routes.draw do
 
-Things you may want to cover:
+    resources :properties
 
-* Ruby version
+    get 'properties'             => 'properties#index',   as: 'properties'    # http://localhost:3000/properties
+    get 'properties/:id'         => 'properties#show',    as: 'resource'      # http://localhost:3000/properties/123
+    get 'properties/new'         => 'properties#new',     as: 'new_resource'  # http://localhost:3000/properties/new
+    get 'properties/:id/edit'    => 'properties#edit',    as: 'edit_resource' # http://localhost:3000/properties/123/edit
 
-* System dependencies
+    post    'properties'         => 'properties#create'   # http://localhost:3000/properties
+    put     'properties/:id'     => 'properties#update'   # http://localhost:3000/properties/123
+    patch   'properties/:id'     => 'properties#update'   # http://localhost:3000/properties/123
+    delete  'properties/:id'     => 'properties#destroy'  # http://localhost:3000/properties/123
 
-* Configuration
+end
+```
 
-* Database creation
+1. Set the root path
+2. Parameters in order from left to right
+3. as: to create path
+4. Use [Postman](https://www.getpostman.com/) to test the routes
+5. Comment out protect_from_forgery with: :exception if you want to submit post/put/delete actions
 
-* Database initialization
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...

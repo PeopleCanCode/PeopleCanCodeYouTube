@@ -15,7 +15,6 @@ ActiveRecord::Schema.define(version: 20170306085358) do
   create_table "properties", force: :cascade do |t|
     t.string   "name"
     t.text     "description"
-    t.string   "type"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end

@@ -4,8 +4,10 @@ Generate models:
 
 
 ```bash
-    $ rails generate model Property name:string description:text type:string !!!!!!!! not type
+    $ rails generate model Property name:string description:text
 ```
+
+Make sure youre column names are not on a restricted list - for example `type` is restricted. [list of restricted words](http://reservedwords.herokuapp.com)
 
 
 ```bash
@@ -24,7 +26,7 @@ Generate models:
 
 ```ruby
     Rails.application.routes.draw do
-      # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+      # For details on the DSL available within this file, see [http://guides.rubyonrails.org/routing.html](http://guides.rubyonrails.org/routing.html)
 
       root 'properties#index'
 

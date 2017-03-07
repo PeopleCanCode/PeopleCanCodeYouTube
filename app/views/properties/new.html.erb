@@ -9,11 +9,6 @@
       <%= f.text_area :description, rows: 6 %>
     </div>
 
-    <div>
-      <%= f.label :type %><br />
-      <%= f.select :type, ['house', 'condo'], prompt: 'Select type' %>
-    </div>
-
     <%= f.submit 'Save' %>
     <%= link_to 'back', properties_path %>
 <% end %>
